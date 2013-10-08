@@ -1,0 +1,58 @@
+2013/10/08 16:35:01 [error] [exception.CException] exception 'CException' with message 'Property "PluploadWidget.config" is not defined.' in D:\Program Files\Zend\Apache2\htdocs\yii\framework\base\CComponent.php:173
+Stack trace:
+#0 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\CWidgetFactory.php(161): CComponent->__set('config', Array)
+#1 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\CBaseController.php(146): CWidgetFactory->createWidget(Object(SiteController), 'application.ext...', Array)
+#2 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\CBaseController.php(172): CBaseController->createWidget('application.ext...', Array)
+#3 D:\Program Files\Zend\Apache2\htdocs\muwu\protected\views\site\index.php(36): CBaseController->widget('application.ext...', Array)
+#4 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\CBaseController.php(126): require('D:\Program File...')
+#5 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\Program File...', NULL, true)
+#6 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\CController.php(869): CBaseController->renderFile('D:\Program File...', NULL, true)
+#7 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\CController.php(782): CController->renderPartial('index', NULL, true)
+#8 D:\Program Files\Zend\Apache2\htdocs\muwu\protected\controllers\SiteController.php(32): CController->render('index')
+#9 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('')
+#14 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#15 D:\Program Files\Zend\Apache2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 D:\Program Files\Zend\Apache2\htdocs\muwu\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/muwu/
+---
+2013/10/08 17:21:14 [error] [php] Missing argument 2 for YiiBase::t(), called in D:\Program Files\Zend\Apache2\htdocs\muwu\protected\views\layouts\main.php on line 32 and defined (D:\Program Files\Zend\Apache2\htdocs\yii\framework\YiiBase.php:571)
+Stack trace:
+#0 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#2 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#3 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\CBaseController.php(206): CContentDecorator->run()
+#5 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\CBaseController.php(300): SiteController->endWidget()
+#6 D:\Program Files\Zend\Apache2\htdocs\muwu\protected\views\layouts\column1.php(6): SiteController->endContent()
+#7 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\CBaseController.php(126): require()
+#8 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#9 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\CController.php(784): SiteController->renderFile()
+#10 D:\Program Files\Zend\Apache2\htdocs\muwu\protected\controllers\SiteController.php(32): SiteController->render()
+#11 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#12 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\CController.php(286): SiteController->runAction()
+#14 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#15 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\CWebApplication.php(282): SiteController->run()
+#16 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 D:\Program Files\Zend\Apache2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#18 D:\Program Files\Zend\Apache2\htdocs\muwu\index.php(13): CWebApplication->run()
+REQUEST_URI=/muwu/
+in D:\Program Files\Zend\Apache2\htdocs\muwu\protected\views\layouts\main.php (32)
+in D:\Program Files\Zend\Apache2\htdocs\muwu\protected\views\layouts\column1.php (6)
+in D:\Program Files\Zend\Apache2\htdocs\muwu\protected\controllers\SiteController.php (32)
+2013/10/08 17:23:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "memory" 动作.' in D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\CController.php(270): CController->missingAction('memory')
+#1 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\CWebApplication.php(282): CController->run('memory')
+#2 D:\Program Files\Zend\Apache2\htdocs\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/memory')
+#3 D:\Program Files\Zend\Apache2\htdocs\yii\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\Program Files\Zend\Apache2\htdocs\muwu\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/muwu/index.php?r=site/memory
+HTTP_REFERER=http://localhost:6090/muwu/
+---

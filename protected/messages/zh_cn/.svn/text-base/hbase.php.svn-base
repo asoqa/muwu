@@ -1,0 +1,20 @@
+<?php
+return array(
+        'TableName'=>'表名',
+        'ColumnFamilyNumber'=>'列族数',
+        'RegionServerNumber'=>'分区数', 
+        'column'=>'列',
+        'timestamp'=>'时间戳',
+        'value'=>'值',
+        'start'=>'开始时间',
+        'end'=>'结束时间',
+        'RowView'=>'行视图',
+        'ColumnView'=>'列视图',        
+        'Add Column'=>'新增列',
+        'Add Row'=>'新增行',                
+        'Get More Data'=>'获取更多',    
+        'Update Column'=>'更新列',
+        'Update Row'=>'更新行',
+        'Disable'=>'禁用',
+        'Enable'=>'启用',        
+        );

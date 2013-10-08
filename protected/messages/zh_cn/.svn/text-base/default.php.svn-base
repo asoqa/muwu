@@ -1,0 +1,13 @@
+<?php
+return array(
+        'refresh'=>'刷新',
+        'id'=>'序号',
+        'operation'=>'操作',
+        'Search'=>'搜索',
+        'Reset'=>'重置',        
+        'Save'=>'保存',
+        'Cancel'=>'取消',
+        'Update'=>'更新',        
+        'Add'=>'新增',        
+        'Remove'=>'移除',        
+        );
